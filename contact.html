@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +8,14 @@
     <title>Contact</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-info">
+<body class="d-flex flex-column h-100">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-info flex-shrink-0">
         <a class="navbar-brand text-light" href="#">Veronique Conus</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +37,7 @@
         </div>
     </nav>
 
-    
+
 
     <!-- Our rows function in containers (grid created). -->
     <div class="container">
@@ -69,35 +71,43 @@
 
     <!-- Creates the Overall Grid -->
     <div class="container">
-
         <!-- First Row -->
         <div class="row">
 
             <!-- First (and only column) -->
-            <div class="col-md-12 text-info">
-                <h1>Contact</h1>
+            <div class="col-md-12">
             </div>
         </div>
 
         <!-- Second Row -->
         <div class="row">
+            <!-- First (and only column) -->
+            <div class="col-md-12 text-info border-bottom">
+                <h1>Contact</h1>
+            </div>
+        </div>
 
-            <!-- First of two columns -->
+        <!-- Third Row -->
+        <div class="row">
+
+            <!-- First (and only columns) -->
             <div class="col-md-12 text-muted">
-                    <form>
-                            <div class="form-group">
-                              <label for="exampleFormControlInput1">Name</label>
-                              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
-                            </div>
-                            <div class="form-group">
-                                    <label for="exampleFormControlInput1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
-                                  </div>
-                            <div class="form-group">
-                              <label for="exampleFormControlTextarea1">Message:</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                          </form>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="example@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <input class="button" type="submit" value="Submit">
+                </form>
             </div>
 
 
@@ -105,7 +115,7 @@
 
     </div>
 
-    <footer class="footer mt-auto py-3 mb-2 bg-secondary text-white">
+    <footer class="footer mt-auto py-3 bg-secondary text-white">
         <div class="container text-center">Copyright © 2019</div>
     </footer>
 
